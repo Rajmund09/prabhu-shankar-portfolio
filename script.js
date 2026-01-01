@@ -1,15 +1,15 @@
 // Simple hover effect
 document.querySelectorAll('a, button').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursorRing.style.transform += ' scale(1.5)';
-  });
-  el.addEventListener('mouseleave', () => {
-    cursorRing.style.transform = `translate(${ringX - 20}px, ${ringY - 20}px)`;
-  });
+    el.addEventListener('mouseenter', () => {
+        cursorRing.style.transform += ' scale(1.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+        cursorRing.style.transform = `translate(${ringX - 20}px, ${ringY - 20}px)`;
+    });
 });
 
 // Add scroll indicator HTML to body
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const scrollIndicator = document.createElement('div');
     scrollIndicator.className = 'scroll-indicator';
     scrollIndicator.innerHTML = `
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
     document.body.appendChild(scrollIndicator);
-    
+
     // Hide scroll indicator when user starts scrolling
     let scrollTimer;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         scrollIndicator.style.opacity = '0';
         clearTimeout(scrollTimer);
         scrollTimer = setTimeout(() => {
@@ -43,7 +43,7 @@ document.addEventListener("contextmenu", function (e) {
 // Keydown prevention for F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
 document.addEventListener('keydown', function (e) {
     // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
-    if (e.keyCode === 123 || 
+    if (e.keyCode === 123 ||
         (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
         (e.ctrlKey && e.keyCode === 85)) {
         e.preventDefault();
@@ -132,7 +132,7 @@ function initGSAPSmoothScroll() {
     // Check if ScrollSmoother is available
     if (typeof gsap !== 'undefined' && gsap.registerPlugin && ScrollSmoother) {
         gsap.registerPlugin(ScrollSmoother);
-        
+
         // Create smooth scrolling effect
         ScrollSmoother.create({
             smooth: 1.5, // Adjust smoothness (1-3 recommended)
@@ -145,12 +145,12 @@ function initGSAPSmoothScroll() {
 }
 
 // Call this in your page load function
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     // ... your existing load code ...
-    
+
     // Initialize smooth scrolling
     initSmoothScrolling();
-    
+
     // Optional: Uncomment for GSAP smooth scroll
     // initGSAPSmoothScroll();
 });
@@ -302,14 +302,14 @@ window.addEventListener('load', function () {
             loader.style.display = 'none';
             initAnimations();
             addReviewCards();
-            
+
             // Initialize counters
             animateCounters();
-            
+
             // Add CSS custom properties for profile card
             updateProfileCardSize();
             window.addEventListener('resize', updateProfileCardSize);
-            
+
             // Initialize resume modal
             initResumeModal();
         }
@@ -320,12 +320,12 @@ window.addEventListener('load', function () {
 function updateProfileCardSize() {
     const vw = window.innerWidth;
     const profileCard = document.querySelector('.animated-profile-card');
-    
+
     if (profileCard && vw < 576) {
         // On mobile, adjust tag positions
         const tags = document.querySelectorAll('.profile-tag');
         tags.forEach(tag => {
-            if (tag.classList.contains('profile-tag-left') || 
+            if (tag.classList.contains('profile-tag-left') ||
                 tag.classList.contains('profile-tag-right')) {
                 tag.style.display = vw < 400 ? 'none' : 'block';
             }
@@ -340,50 +340,50 @@ function initResumeModal() {
     const closeModalBtn = document.querySelector('.modal-close-btn');
     const closeResumeModalBtn = document.getElementById('closeResumeModal');
     const printOption = document.querySelector('.print-option');
-    
+
     if (!downloadBtn || !resumeModal) return;
-    
+
     // Open modal when download button is clicked
-    downloadBtn.addEventListener('click', function(e) {
+    downloadBtn.addEventListener('click', function (e) {
         e.preventDefault();
         resumeModal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
-    
+
     // Close modal when close buttons are clicked
     if (closeModalBtn) {
-        closeModalBtn.addEventListener('click', function() {
+        closeModalBtn.addEventListener('click', function () {
             resumeModal.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
     }
-    
+
     if (closeResumeModalBtn) {
-        closeResumeModalBtn.addEventListener('click', function() {
+        closeResumeModalBtn.addEventListener('click', function () {
             resumeModal.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
     }
-    
+
     // Close modal when clicking outside
-    resumeModal.addEventListener('click', function(e) {
+    resumeModal.addEventListener('click', function (e) {
         if (e.target === resumeModal) {
             resumeModal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
     });
-    
+
     // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && resumeModal.classList.contains('active')) {
             resumeModal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
     });
-    
+
     // Handle print option
     if (printOption) {
-        printOption.addEventListener('click', function() {
+        printOption.addEventListener('click', function () {
             if (window.confirm('Open print dialog for resume?')) {
                 window.print();
             }
@@ -391,57 +391,57 @@ function initResumeModal() {
             document.body.style.overflow = 'auto';
         });
     }
-    
+
     // Track download clicks (optional analytics)
     const downloadLinks = resumeModal.querySelectorAll('.download-option-card[href]');
     downloadLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             const format = this.getAttribute('data-format');
             console.log(`Resume download initiated: ${format} format`);
-            
+
             // Close modal after a brief delay
             setTimeout(() => {
                 resumeModal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }, 300);
-            
+
             // Optional: Show success notification
             setTimeout(() => {
                 showDownloadSuccess(format);
             }, 500);
         });
     });
-    
+
     // Add touch event listeners for better mobile experience
     // Prevent modal from closing on option click (for mobile)
     const options = resumeModal.querySelectorAll('.download-option-card');
     options.forEach(option => {
-        option.addEventListener('touchstart', function(e) {
+        option.addEventListener('touchstart', function (e) {
             e.stopPropagation();
         }, { passive: true });
     });
-    
+
     // Close modal on swipe down (for mobile)
     let startY = 0;
-    resumeModal.addEventListener('touchstart', function(e) {
+    resumeModal.addEventListener('touchstart', function (e) {
         startY = e.touches[0].clientY;
     }, { passive: true });
-    
-    resumeModal.addEventListener('touchmove', function(e) {
+
+    resumeModal.addEventListener('touchmove', function (e) {
         if (!resumeModal.classList.contains('active')) return;
-        
+
         const currentY = e.touches[0].clientY;
         const diff = currentY - startY;
-        
+
         // If swiping down more than 100px, close modal
         if (diff > 100) {
             resumeModal.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
     }, { passive: true });
-    
+
     // Handle orientation change
-    window.addEventListener('orientationchange', function() {
+    window.addEventListener('orientationchange', function () {
         // Re-center modal on orientation change
         if (resumeModal.classList.contains('active')) {
             setTimeout(() => {
@@ -462,7 +462,7 @@ function showDownloadSuccess(format) {
         <span>Resume downloaded as ${format.toUpperCase()}</span>
     `;
     document.body.appendChild(successMsg);
-    
+
     // Add styles for notification
     if (!document.querySelector('#downloadSuccessStyles')) {
         const style = document.createElement('style');
@@ -507,7 +507,7 @@ function showDownloadSuccess(format) {
         `;
         document.head.appendChild(style);
     }
-    
+
     setTimeout(() => successMsg.remove(), 3000);
 }
 
@@ -530,24 +530,24 @@ function initAnimations() {
         opacity: 0,
         ease: "power3.out"
     })
-    .from(".hero-text p", {
-        duration: 1,
-        y: 50,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.5")
-    .from(".hero-buttons", {
-        duration: 1,
-        y: 50,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.5")
-    .from(".animated-profile-card", {
-        duration: 1.5,
-        scale: 0.8,
-        opacity: 0,
-        ease: "back.out(1.7)"
-    }, "-=1");
+        .from(".hero-text p", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out"
+        }, "-=0.5")
+        .from(".hero-buttons", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out"
+        }, "-=0.5")
+        .from(".animated-profile-card", {
+            duration: 1.5,
+            scale: 0.8,
+            opacity: 0,
+            ease: "back.out(1.7)"
+        }, "-=1");
 
     // About section animation
     gsap.from(".about-text", {
@@ -682,14 +682,14 @@ function initAnimations() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
-                
+
                 // Close menu if open
                 document.getElementById('menu-icon').checked = false;
             }
@@ -749,25 +749,25 @@ if (videoBtn && videoModal && modalVideo && closeVideoBtn) {
     let originalBodyOverflow = '';
     let originalHtmlOverflow = '';
     let originalBodyHeight = '';
-    
+
     videoBtn.addEventListener('click', function () {
         // Store original values
         originalBodyOverflow = document.body.style.overflow;
         originalHtmlOverflow = document.documentElement.style.overflow;
         originalBodyHeight = document.body.style.height;
-        
+
         // Show modal
         videoModal.classList.add('active');
-        
+
         // Disable scrolling on body AND html
         document.body.style.overflow = 'hidden';
         document.documentElement.style.overflow = 'hidden';
-        
+
         // Fix for iOS Safari
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
         document.body.style.width = '100%';
-        
+
         // Store scroll position for iOS
         const scrollY = window.scrollY;
         document.body.dataset.scrollY = scrollY;
@@ -787,17 +787,17 @@ if (videoBtn && videoModal && modalVideo && closeVideoBtn) {
         videoModal.classList.remove('active');
         modalVideo.pause();
         modalVideo.currentTime = 0;
-        
+
         // Restore scrolling
         document.body.style.overflow = originalBodyOverflow;
         document.documentElement.style.overflow = originalHtmlOverflow;
-        
+
         // Restore body position and height
         document.body.style.position = '';
         document.body.style.top = '';
         document.body.style.width = '';
         document.body.style.height = originalBodyHeight;
-        
+
         // Restore scroll position for iOS
         if (document.body.dataset.scrollY) {
             window.scrollTo(0, parseInt(document.body.dataset.scrollY, 10));
@@ -824,16 +824,16 @@ if (videoBtn && videoModal && modalVideo && closeVideoBtn) {
             closeVideo();
         }, 1000);
     });
-    
+
     // Handle page visibility changes (when user switches tabs)
-    document.addEventListener('visibilitychange', function() {
+    document.addEventListener('visibilitychange', function () {
         if (document.hidden && videoModal.classList.contains('active')) {
             modalVideo.pause();
         }
     });
-    
+
     // Handle page unload
-    window.addEventListener('beforeunload', function() {
+    window.addEventListener('beforeunload', function () {
         if (videoModal.classList.contains('active')) {
             closeVideo();
         }
@@ -899,7 +899,7 @@ initMessageAnimation();
 // Add click event to close inspect card when clicking outside
 const inspectCard = document.getElementById('inspectCard');
 if (inspectCard) {
-    inspectCard.addEventListener('click', function(e) {
+    inspectCard.addEventListener('click', function (e) {
         if (e.target === this) {
             closeInspectCard();
         }
@@ -925,66 +925,66 @@ window.addEventListener('load', () => {
 });
 
 // Prevent text selection on some elements
-document.addEventListener('selectstart', function(e) {
+document.addEventListener('selectstart', function (e) {
     if (e.target.classList.contains('prevent-select')) {
         e.preventDefault();
     }
 });
 
 // Contact Form Submission
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form data
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
-            
+
             // Simple validation
             if (!name || !email || !subject || !message) {
                 showNotification('Please fill in all fields', 'error');
                 return;
             }
-            
+
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 showNotification('Please enter a valid email address', 'error');
                 return;
             }
-            
+
             // In a real application, you would send this data to a server
             // For now, we'll simulate a successful submission
             simulateFormSubmission(name, email, subject, message);
         });
     }
-    
+
     // WhatsApp click tracking
     const whatsappLinks = document.querySelectorAll('[href*="whatsapp"]');
     whatsappLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             // You can add analytics here
             console.log('WhatsApp link clicked');
         });
     });
-    
+
     // Email click tracking
     const emailLinks = document.querySelectorAll('[href^="mailto:"]');
     emailLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             console.log('Email link clicked');
         });
     });
-    
+
     // Location click tracking
     const locationLinks = document.querySelectorAll('[href*="maps.google"]');
     locationLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             console.log('Location link clicked');
         });
     });
@@ -996,23 +996,23 @@ function simulateFormSubmission(name, email, subject, message) {
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
-    
+
     // Simulate API call delay
     setTimeout(() => {
         // Reset button
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-        
+
         // Show success message
         showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        
+
         // Reset form
         document.getElementById('contactForm').reset();
-        
+
         // Scroll to success message
         const contactSection = document.getElementById('contact');
         contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
+
     }, 1500);
 }
 
@@ -1026,15 +1026,15 @@ function showNotification(message, type = 'success') {
             <span>${message}</span>
         </div>
     `;
-    
+
     // Add to body
     document.body.appendChild(notification);
-    
+
     // Show notification
     setTimeout(() => {
         notification.classList.add('show');
     }, 10);
-    
+
     // Remove after 5 seconds
     setTimeout(() => {
         notification.classList.remove('show');
@@ -1120,35 +1120,35 @@ if (!document.querySelector('#notificationStyles')) {
     document.head.appendChild(notificationStyles);
 }
 // Back to Top Button - Simple and reliable
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const backToTopBtn = document.createElement('button');
     backToTopBtn.id = 'backToTop';
     backToTopBtn.className = 'back-to-top';
     backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     backToTopBtn.setAttribute('aria-label', 'Back to top');
     backToTopBtn.setAttribute('title', 'Back to top');
-    
+
     // Add to body
     document.body.appendChild(backToTopBtn);
-    
+
     // Show/hide based on scroll
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.pageYOffset > 300) {
             backToTopBtn.classList.add('visible');
         } else {
             backToTopBtn.classList.remove('visible');
         }
     });
-    
+
     // Scroll to top when clicked
-    backToTopBtn.addEventListener('click', function(e) {
+    backToTopBtn.addEventListener('click', function (e) {
         e.preventDefault();
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
-    
+
     console.log('Back to top button initialized');
 });
 document.querySelector('.print-option').addEventListener('click', () => {
