@@ -96,19 +96,25 @@ body {
 }
 
 @keyframes scrollPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.3;
     }
+
     50% {
         opacity: 1;
     }
 }
 
 @keyframes dotPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.3;
         transform: scale(1);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.2);
@@ -119,6 +125,7 @@ body {
     .scroll-indicator {
         right: 15px;
     }
+
     .scroll-text {
         font-size: 10px;
     }
@@ -196,21 +203,27 @@ body {
     0% {
         width: 0;
     }
+
     40% {
         width: 100%;
     }
+
     60% {
         width: 100%;
     }
+
     100% {
         width: 0;
     }
 }
 
 @keyframes blinkCaret {
-    0%, 100% {
+
+    0%,
+    100% {
         border-color: transparent;
     }
+
     50% {
         border-color: var(--secondary);
     }
@@ -241,12 +254,16 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
     }
+
     33% {
         transform: translateY(-30px) rotate(120deg);
     }
+
     66% {
         transform: translateY(20px) rotate(240deg);
     }
@@ -387,24 +404,32 @@ nav {
 }
 
 @keyframes border-transform {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
     }
+
     14% {
         border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
     }
@@ -586,14 +611,17 @@ nav {
         transform: translate(-50%, -50%) scale(1);
         border-radius: 50%;
     }
+
     30% {
         transform: translate(-48%, -52%) scale(1.08);
         border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
     }
+
     60% {
         transform: translate(-52%, -48%) scale(0.95);
         border-radius: 45% 55% 40% 60% / 60% 40% 60% 40%;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1);
         border-radius: 50%;
@@ -605,14 +633,17 @@ nav {
         transform: translate(-50%, -50%) scale(0.7);
         opacity: 0;
     }
+
     30% {
         transform: translate(-60%, -60%) scale(1);
         opacity: 0.5;
     }
+
     60% {
         transform: translate(-50%, -50%) scale(0.8);
         opacity: 0.3;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(0.7);
         opacity: 0;
@@ -802,9 +833,11 @@ nav {
     0% {
         background-position: 0 0;
     }
+
     50% {
         background-position: 400% 0;
     }
+
     100% {
         background-position: 0 0;
     }
@@ -863,18 +896,22 @@ nav {
         transform: rotate(0deg) scale(1);
         opacity: 0.6;
     }
+
     25% {
         transform: rotate(90deg) scale(1.02);
         opacity: 0.8;
     }
+
     50% {
         transform: rotate(180deg) scale(1);
         opacity: 0.6;
     }
+
     75% {
         transform: rotate(270deg) scale(1.02);
         opacity: 0.8;
     }
+
     100% {
         transform: rotate(360deg) scale(1);
         opacity: 0.6;
@@ -958,9 +995,12 @@ nav {
 }
 
 @keyframes tagFloat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate3d(0, 0, 0);
     }
+
     50% {
         transform: translate3d(0, -8px, 0);
     }
@@ -984,18 +1024,27 @@ nav {
         transition: opacity 0.3s;
         pointer-events: none;
     }
-    
+
     .video-modal.active::before {
         opacity: 1;
         animation: fadeHint 3s forwards;
     }
-    
+
     @keyframes fadeHint {
-        0% { opacity: 1; }
-        70% { opacity: 1; }
-        100% { opacity: 0; }
+        0% {
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
     }
 }
+
 .animated-profile-card .video-play-btn {
     position: absolute;
     bottom: clamp(70px, 20%, 90px);
@@ -1149,32 +1198,37 @@ nav {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
 }
+
 /* Enhanced Video Modal Close Button for Small Screens */
 @media (max-width: 768px) {
     .close-video {
-        background: rgba(0, 0, 0, 0.7) !important; /* Darker background for contrast */
-        border: 2px solid rgba(255, 255, 255, 0.8) !important; /* Add border */
+        background: rgba(0, 0, 0, 0.7) !important;
+        /* Darker background for contrast */
+        border: 2px solid rgba(255, 255, 255, 0.8) !important;
+        /* Add border */
         width: 40px !important;
         height: 40px !important;
         top: 10px !important;
         right: 10px !important;
         font-size: 18px !important;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important; /* Add shadow */
-        z-index: 1001 !important; /* Ensure it's on top */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important;
+        /* Add shadow */
+        z-index: 1001 !important;
+        /* Ensure it's on top */
     }
-    
+
     .close-video:hover {
         background: rgba(0, 0, 0, 0.9) !important;
         transform: scale(1.1) !important;
     }
-    
+
     /* Make video modal more mobile-friendly */
     .video-modal-content {
         width: 95% !important;
         max-width: 95vw !important;
         margin: 0 auto !important;
     }
-    
+
     #modalVideo {
         max-height: 70vh !important;
     }
@@ -1190,7 +1244,7 @@ nav {
         top: 8px !important;
         right: 8px !important;
     }
-    
+
     /* Make the close button more obvious with animation */
     .close-video::after {
         content: 'Close';
@@ -1207,7 +1261,7 @@ nav {
         white-space: nowrap;
         pointer-events: none;
     }
-    
+
     .close-video:hover::after {
         opacity: 1;
     }
@@ -1221,6 +1275,7 @@ nav {
 .video-modal.active {
     overflow-y: auto !important;
 }
+
 /* Download Resume Button Styles - Fixed */
 .download-resume-container {
     position: relative;
@@ -1284,13 +1339,27 @@ nav {
 }
 
 @keyframes blinkDot {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.1; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
-    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 /* Enhanced Resume Modal - Fixed for all devices */
@@ -1572,9 +1641,12 @@ nav {
 }
 
 @keyframes scale {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: none;
     }
+
     50% {
         transform: scale3d(1.1, 1.1, 1);
     }
@@ -1799,6 +1871,7 @@ section {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(-1 * clamp(170px, 27vw, 210px) * 8));
     }
@@ -1808,6 +1881,7 @@ section {
     0% {
         transform: translateX(calc(-1 * clamp(170px, 27vw, 210px) * 8));
     }
+
     100% {
         transform: translateX(0);
     }
@@ -1834,11 +1908,10 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, 
-        rgba(37, 99, 235, 0.1), 
-        rgba(144, 91, 237, 0.2), 
-        rgba(37, 99, 235, 0.1)
-    );
+    background: linear-gradient(90deg,
+            rgba(37, 99, 235, 0.1),
+            rgba(144, 91, 237, 0.2),
+            rgba(37, 99, 235, 0.1));
     border-radius: 6px;
     transform: scaleX(0);
     transform-origin: center;
@@ -2214,6 +2287,7 @@ section {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -2358,7 +2432,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent);
 }
 
 .project-info {
@@ -2846,6 +2920,7 @@ footer {
     0% {
         filter: hue-rotate(0deg);
     }
+
     100% {
         filter: hue-rotate(360deg);
     }
@@ -2895,10 +2970,13 @@ footer {
 }
 
 @keyframes cube-pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.1);
         opacity: 0.8;
@@ -3032,6 +3110,7 @@ footer {
         transform: translateY(20px) scale(0.95);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0) scale(1);
         opacity: 1;
@@ -3046,64 +3125,64 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-text {
         padding-right: 0;
         margin-bottom: 40px;
         order: 2;
     }
-    
+
     .hero-image {
         order: 1;
         margin-bottom: 40px;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .about-content {
         flex-direction: column;
     }
-    
+
     .contact-container {
         flex-direction: column;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: 40px;
     }
-    
+
     .footer-links {
         width: 100%;
         justify-content: space-between;
     }
-    
+
     .nav ul li a {
         font-size: clamp(3vh, 6vw, 7vh);
     }
-    
+
     .profile-tag-left {
         left: clamp(-20px, -3vw, -15px);
     }
-    
+
     .profile-tag-right {
         right: clamp(-20px, -3vw, -15px);
     }
-    
+
     /* Resume Modal adjustments for tablet */
     .download-options-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         padding: 15px;
     }
-    
+
     .download-option-card {
         padding: 15px 10px;
         min-height: 130px;
     }
-    
+
     .option-icon {
         width: 50px;
         height: 50px;
@@ -3116,75 +3195,75 @@ footer {
     .hero {
         padding-top: clamp(120px, 20vh, 140px);
     }
-    
+
     .hero-text h1 {
         font-size: clamp(1.8rem, 4vw, 2.5rem);
     }
-    
+
     .nav ul li a {
         font-size: clamp(2.5vh, 5vw, 5vh);
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .glow-on-hover,
     .btn-3d,
     .download-resume-container {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .button a {
         font-size: clamp(20px, 3vw, 28px);
         padding: clamp(12px, 2vw, 15px) clamp(20px, 3vw, 30px);
     }
-    
+
     .section-title h2 {
         font-size: clamp(1.6rem, 3vw, 2rem);
     }
-    
+
     .profile-tag {
         max-width: min(100px, 35vw);
     }
-    
+
     .profile-tag-left {
         left: clamp(-15px, -2vw, -10px);
     }
-    
+
     .profile-tag-right {
         right: clamp(-15px, -2vw, -10px);
     }
-    
+
     .video-modal-content {
         width: 95%;
     }
-    
+
     .scroll-indicator {
         display: none;
     }
-    
+
     /* Resume Modal for mobile */
     .resume-modal-content {
         max-height: 80vh;
         max-width: 95vw;
     }
-    
+
     .download-options-grid {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    
+
     .download-option-card {
         flex-direction: row;
         text-align: left;
         padding: 15px;
         min-height: auto;
     }
-    
+
     .option-icon {
         width: 45px;
         height: 45px;
@@ -3192,29 +3271,29 @@ footer {
         margin-bottom: 0;
         margin-right: 15px;
     }
-    
+
     .option-info {
         text-align: left;
         flex: 1;
     }
-    
+
     .modal-header {
         padding: 20px 15px 15px;
     }
-    
+
     .modal-footer {
         padding: 15px;
     }
-    
+
     /* Contact buttons on mobile */
     .fast-contact-buttons {
         flex-direction: column;
     }
-    
+
     .fast-btn {
         min-width: 100%;
     }
-    
+
     .footer-cta-btn {
         width: 100%;
         justify-content: center;
@@ -3226,133 +3305,133 @@ footer {
     .hero {
         padding-top: clamp(140px, 25vh, 160px);
     }
-    
+
     .about-stats {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav ul li a {
         font-size: clamp(2vh, 4vw, 4vh);
     }
-    
+
     .hero-text h1 {
         font-size: clamp(1.6rem, 3.5vw, 2rem);
     }
-    
+
     .hero-text p {
         font-size: clamp(0.9rem, 1.8vw, 1rem);
     }
-    
+
     .section-title h2 {
         font-size: clamp(1.4rem, 2.8vw, 1.8rem);
     }
-    
+
     .pill {
         width: clamp(180px, 35vw, 220px);
     }
-    
+
     .right .knob {
         transform: translateX(clamp(120px, 25vw, 150px)) rotate(45deg);
     }
-    
+
     .indicator {
         font-size: clamp(12px, 2vw, 16px);
     }
-    
+
     .cube-loader {
         transform: skewY(-20deg) scale(0.7);
     }
-    
+
     .cube-loader .cube div {
         gap: 20px;
     }
-    
+
     .cube-loader .cube div span {
         width: 40px;
         height: 40px;
     }
-    
+
     .cube-loader .cube div span:before {
         left: -30px;
         width: 30px;
     }
-    
+
     .cube-loader .cube div span:after {
         top: -30px;
         height: 30px;
     }
-    
+
     .close-video {
         width: 40px;
         height: 40px;
         font-size: 20px;
     }
-    
+
     .profile-tag {
         padding: 6px 8px;
         font-size: clamp(0.6rem, 1.8vw, 0.7rem);
     }
-    
+
     .profile-tag-left {
         top: clamp(2%, 5px, 10px);
         left: clamp(-10px, -1vw, -5px);
     }
-    
+
     .profile-tag-right {
         top: clamp(1%, 3px, 5px);
         right: clamp(-10px, -1vw, -5px);
     }
-    
+
     .profile-tag-bottom {
         bottom: clamp(5px, 2%, 10px);
         font-size: clamp(0.5rem, 1.6vw, 0.6rem);
     }
-    
+
     .animated-profile-card .video-play-btn {
         width: 40px;
         height: 40px;
     }
-    
+
     .animated-profile-card .video-play-btn i {
         font-size: 14px;
     }
-    
+
     .contact-item {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .contact-item i {
         margin-bottom: 10px;
     }
-    
+
     .whatsapp-btn,
     .fast-btn {
         font-size: 0.85rem;
         padding: 10px 15px;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .footer-links-column {
         min-width: 100%;
     }
-    
+
     .footer-social-links {
         justify-content: center;
     }
-    
+
     .footer-cta h4 {
         font-size: 1.3rem;
     }
-    
+
     .footer-cta-btn {
         font-size: 0.9rem;
         padding: 10px 20px;
@@ -3365,34 +3444,34 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .glow-on-hover,
     .btn-3d {
         width: 100%;
         max-width: 250px;
     }
-    
+
     .nav ul li a {
         font-size: clamp(1.8vh, 3.5vw, 3.5vh);
     }
-    
+
     .section-title h2 {
         font-size: clamp(1.3rem, 2.5vw, 1.6rem);
     }
-    
+
     .cube-loader {
         transform: skewY(-20deg) scale(0.5);
     }
-    
+
     .hero-text {
         padding: 0 10px;
     }
-    
+
     .profile-tag-left,
     .profile-tag-right {
         display: none;
     }
-    
+
     .profile-tag-bottom {
         display: block;
         width: 90%;
@@ -3400,69 +3479,69 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
     .minecraft-text {
         font-size: clamp(14px, 2vw, 16px);
     }
-    
+
     .footer-logo .minecraft-text {
         font-size: clamp(12px, 1.8vw, 14px);
     }
-    
+
     .contact-item {
         padding: 10px;
     }
-    
+
     .fast-contact-box {
         padding: 15px;
     }
-    
+
     .footer-social-link {
         width: 35px;
         height: 35px;
     }
-    
+
     .footer-links-column ul li a {
         font-size: 0.85rem;
     }
-    
+
     .copyright p {
         font-size: 0.8rem;
     }
-    
+
     /* Resume Modal for very small screens */
     .resume-modal {
         padding: 5px;
     }
-    
+
     .resume-modal-content {
         max-height: 90vh;
         border-radius: 12px;
     }
-    
+
     .download-option-card {
         padding: 12px;
     }
-    
+
     .option-icon {
         width: 40px;
         height: 40px;
         font-size: 1.1rem;
         margin-right: 10px;
     }
-    
+
     .option-info h4 {
         font-size: 0.9rem;
     }
-    
+
     .option-info p {
         font-size: 0.75rem;
     }
-    
+
     .modal-header h3 {
         font-size: 1.1rem;
     }
-    
+
     .modal-header p {
         font-size: 0.8rem;
     }
@@ -3474,49 +3553,49 @@ footer {
         min-height: auto;
         padding: 100px 0 50px;
     }
-    
+
     .resume-modal-content {
         max-height: 85vh;
         max-width: 90vw;
     }
-    
+
     .download-options-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         padding: 10px;
     }
-    
+
     .download-option-card {
         min-height: 100px;
         padding: 10px;
     }
-    
+
     .option-icon {
         width: 35px;
         height: 35px;
         font-size: 1rem;
         margin-bottom: 5px;
     }
-    
+
     .option-info h4 {
         font-size: 0.8rem;
         margin-bottom: 2px;
     }
-    
+
     .option-info p {
         font-size: 0.7rem;
         margin-bottom: 5px;
     }
-    
+
     .modal-header {
         padding: 10px 15px;
     }
-    
+
     .modal-header h3 {
         font-size: 1rem;
         margin-bottom: 5px;
     }
-    
+
     .modal-header p {
         font-size: 0.8rem;
     }
@@ -3527,17 +3606,17 @@ footer {
     .download-option-card {
         min-height: 44px;
     }
-    
+
     .download-option-card:active {
         background: rgba(255, 255, 255, 0.1);
         transform: scale(0.98);
     }
-    
+
     .modal-close-btn:active {
         background: rgba(255, 255, 255, 0.2);
         transform: scale(0.98);
     }
-    
+
     .glow-on-hover:active,
     .btn-3d:active {
         transform: scale(0.98);
@@ -3554,6 +3633,7 @@ footer {
 
 /* Print Styles */
 @media print {
+
     .loader-wrapper,
     .video-modal,
     .success-message,
@@ -3571,26 +3651,26 @@ footer {
     .btn-3d span:nth-child(4) {
         display: none !important;
     }
-    
+
     body {
         background: white !important;
         color: black !important;
     }
-    
+
     .hero {
         min-height: auto;
         padding: 50px 0;
     }
-    
+
     .profile-image {
         filter: grayscale(100%);
     }
-    
+
     a {
         color: black !important;
         text-decoration: underline !important;
     }
-    
+
     .glow-on-hover,
     .btn-3d span:first-child {
         border: 1px solid black !important;
@@ -3598,6 +3678,7 @@ footer {
         color: black !important;
     }
 }
+
 /* Back to Top Button - Minimal Working Version */
 .back-to-top {
     position: fixed;
@@ -3643,10 +3724,11 @@ footer {
         font-size: 1.1rem;
     }
 }
+
 /* Enhanced Smooth Scrolling */
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 /* For browsers that don't support smooth scroll */
@@ -3667,6 +3749,7 @@ html {
         -webkit-overflow-scrolling: touch;
     }
 }
+
 /* Hardware acceleration for smoother animations */
 .hero-content,
 .animated-profile-card,
@@ -3678,7 +3761,9 @@ html {
 }
 
 /* Prevent layout shifts */
-img, video, iframe {
+img,
+video,
+iframe {
     max-width: 100%;
     height: auto;
     display: block;
@@ -3689,4 +3774,3 @@ img, video, iframe {
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 206, 203, 0.31) rgba(0, 0, 0, 0.1);
 }
-
