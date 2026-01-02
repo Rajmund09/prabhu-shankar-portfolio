@@ -3844,19 +3844,17 @@ iframe {
     .profile-tag-left {
         top: 30px !important;
         left: 15px !important;
-        transform: none !important;
     }
     
     .profile-tag-right {
         top: 30px !important;
         right: 15px !important;
-        transform: none !important;
     }
     
     .profile-tag-bottom {
         bottom: 30px !important;
         left: 50% !important;
-        transform: translateX(-50%) !important;
+        transform: translateX(-20%) !important;
         width: 140px !important;
     }
     
