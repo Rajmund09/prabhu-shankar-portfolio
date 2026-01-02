@@ -1,3 +1,5 @@
+
+
 // Simple hover effect
 document.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('mouseenter', () => {
