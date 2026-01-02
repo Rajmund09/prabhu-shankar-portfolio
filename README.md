@@ -55,6 +55,15 @@ PORTFOLIO
 
 ## 💻 Local Development
 
+## ⚡ Note
+Feel free to explore the code and take inspiration.
+Code can be copied — thinking, problem-solving ability, attitude, and intelligence cannot.
+This portfolio reflects how I approach problems and build solutions, not just how things look.
+If you’re here to learn, welcome.
+If you’re here to copy, you’ll only get the surface.
+
+— Prabhu Shankar Mund
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/prabhu-shankar-portfolio.git
