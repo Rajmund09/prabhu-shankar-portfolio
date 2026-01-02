@@ -188,7 +188,7 @@ body {
     display: inline-block;
 }
 
-/* .highlight-name::after {
+.highlight-name::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -197,7 +197,7 @@ body {
     height: 3px;
     background: linear-gradient(90deg, var(--secondary), var(--accent));
     border-radius: 2px;
-} */
+}
 
 @keyframes typingName {
     0% {
@@ -1001,115 +1001,7 @@ nav {
     animation-delay: 2s;
     white-space: nowrap;
 }
-/* SIMPLE VISIBILITY FIXES FOR ALL PHONES */
-/* Add this at the END of your CSS file */
 
-/* 1. Make sure profile tags are always visible */
-.profile-tag {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    background: rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid #00ff88 !important;
-    z-index: 1000 !important;
-}
-
-/* 2. Make hero buttons always visible */
-.hero-buttons a,
-.hero-buttons button {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* 3. Make hero text always visible */
-.hero-text * {
-    display: block !important;
-    visibility: visible !important;
-}
-
-/* 4. Mobile adjustments */
-@media (max-width: 768px) {
-    /* Fix profile tags positioning on mobile */
-    .profile-tag-left {
-        top: 30px !important;
-        left: 15px !important;
-        transform: none !important;
-    }
-    
-    .profile-tag-right {
-        top: 30px !important;
-        right: 15px !important;
-        transform: none !important;
-    }
-    
-    .profile-tag-bottom {
-        bottom: 30px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        width: 140px !important;
-    }
-    
-    /* Make buttons stack nicely on mobile */
-    .hero-buttons {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 15px !important;
-    }
-    
-    .glow-on-hover,
-    .btn-3d,
-    .download-resume-container {
-        width: 100% !important;
-        max-width: 250px !important;
-        margin: 0 auto !important;
-    }
-    
-    /* Keep profile card visible */
-    .animated-profile-card {
-        width: 300px !important;
-        height: auto !important;
-        margin: 0 auto !important;
-    }
-}
-
-/* 5. Very small phones */
-@media (max-width: 480px) {
-    .profile-tag {
-        font-size: 11px !important;
-        padding: 6px 8px !important;
-    }
-    
-    .profile-tag-left,
-    .profile-tag-right {
-        max-width: 100px !important;
-    }
-    
-    .hero-heading {
-        font-size: 1.6rem !important;
-        text-align: center !important;
-    }
-    
-    .hero-text p {
-        font-size: 14px !important;
-        text-align: center !important;
-        padding: 0 10px !important;
-    }
-}
-
-/* 6. Prevent horizontal scrolling */
-html, body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-    position: relative !important;
-}
-
-/* 7. Force all text to be visible */
-p, h1, h2, h3, h4, h5, h6, span {
-    overflow: visible !important;
-    white-space: normal !important;
-}
 @keyframes tagFloat {
 
     0%,
@@ -3920,3 +3812,100 @@ iframe {
         max-width: 100% !important;
     }
 }
+/* SIMPLE VISIBILITY FIXES FOR ALL PHONES */
+/* Add this at the END of your CSS file */
+
+/* 1. Make sure profile tags are always visible */
+.profile-tag {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #00ff88 !important;
+    z-index: 1000 !important;
+}
+
+/* 2. Make hero buttons always visible */
+.hero-buttons a,
+.hero-buttons button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* 3. Make hero text always visible */
+.hero-text * {
+    visibility: visible !important;
+}
+
+/* 4. Mobile adjustments */
+@media (max-width: 768px) {
+    /* Fix profile tags positioning on mobile */
+    .profile-tag-left {
+        top: 30px !important;
+        left: 15px !important;
+        transform: none !important;
+    }
+    
+    .profile-tag-right {
+        top: 30px !important;
+        right: 15px !important;
+        transform: none !important;
+    }
+    
+    .profile-tag-bottom {
+        bottom: 30px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 140px !important;
+    }
+    
+    /* Make buttons stack nicely on mobile */
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+    
+    .glow-on-hover,
+    .btn-3d,
+    .download-resume-container {
+        width: 100% !important;
+        max-width: 250px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Keep profile card visible */
+    .animated-profile-card {
+        width: 300px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* 5. Very small phones */
+@media (max-width: 480px) {
+    .profile-tag {
+        font-size: 11px !important;
+        padding: 6px 8px !important;
+    }
+    
+    .profile-tag-left,
+    .profile-tag-right {
+        max-width: 100px !important;
+    }
+    
+    .hero-heading {
+        font-size: 1.6rem !important;
+        text-align: center !important;
+    }
+    
+    .hero-text p {
+        font-size: 14px !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+    }
+}
+
+
