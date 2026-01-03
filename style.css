@@ -3782,21 +3782,24 @@ iframe {
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 206, 203, 0.31) rgba(0, 0, 0, 0.1);
 }
+
 /* Emergency Mobile Fix */
 @media (max-width: 768px) {
+
     /* Prevent horizontal overflow */
-    html, body {
+    html,
+    body {
         overflow-x: hidden !important;
         width: 100% !important;
         max-width: 100vw !important;
         position: relative !important;
     }
-    
+
     /* Fix hero section */
     .hero {
         overflow: hidden !important;
     }
-    
+
     /* Ensure text is visible */
     .hero-text h1,
     .hero-text p {
@@ -3805,13 +3808,14 @@ iframe {
         text-overflow: clip !important;
         max-width: 100vw !important;
     }
-    
+
     /* Fix container width */
     .container {
         padding: 0 15px !important;
         max-width: 100% !important;
     }
 }
+
 /* SIMPLE VISIBILITY FIXES FOR ALL PHONES */
 /* Add this at the END of your CSS file */
 
@@ -3840,24 +3844,25 @@ iframe {
 
 /* 4. Mobile adjustments */
 @media (max-width: 768px) {
+
     /* Fix profile tags positioning on mobile */
     .profile-tag-left {
         top: 30px !important;
         left: 15px !important;
     }
-    
+
     .profile-tag-right {
         top: 30px !important;
         right: 15px !important;
     }
-    
+
     .profile-tag-bottom {
         bottom: 30px !important;
         left: 50% !important;
         transform: translateX(-20%) !important;
         width: 140px !important;
     }
-    
+
     /* Make buttons stack nicely on mobile */
     .hero-buttons {
         display: flex !important;
@@ -3865,7 +3870,7 @@ iframe {
         align-items: center !important;
         gap: 15px !important;
     }
-    
+
     .glow-on-hover,
     .btn-3d,
     .download-resume-container {
@@ -3873,7 +3878,7 @@ iframe {
         max-width: 250px !important;
         margin: 0 auto !important;
     }
-    
+
     /* Keep profile card visible */
     .animated-profile-card {
         width: 300px !important;
@@ -3888,22 +3893,20 @@ iframe {
         font-size: 11px !important;
         padding: 6px 8px !important;
     }
-    
+
     .profile-tag-left,
     .profile-tag-right {
         max-width: 100px !important;
     }
-    
+
     .hero-heading {
         font-size: 1.6rem !important;
         text-align: center !important;
     }
-    
+
     .hero-text p {
         font-size: 14px !important;
         text-align: center !important;
         padding: 0 10px !important;
     }
 }
-
-
