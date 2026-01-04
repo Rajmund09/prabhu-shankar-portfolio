@@ -140,6 +140,9 @@ body {
     font-size: clamp(20px, 2.5vw, 30px);
     font-family: 'Press Start 2P', cursive;
     color: #3cff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Add this */
     text-shadow:
         3px 3px 0 #0a3d00,
         6px 6px 0 #000;
@@ -150,11 +153,16 @@ body {
     font-size: clamp(24px, 3vw, 40px);
     font-family: 'Press Start 2P', cursive;
     color: #00c8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
+    margin-top: 0;  /* Add this - remove any top margin */
     text-shadow:
         3px 3px 0 #003c4a,
         6px 6px 0 #000;
 }
+
 
 .footer-logo .minecraft-text {
     font-size: clamp(16px, 2vw, 24px);
