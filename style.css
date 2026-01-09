@@ -3736,9 +3736,18 @@ footer {
     .back-to-top {
         bottom: 20px;
         right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
+        width: 46px;
+        height: 46px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 44px;
+        height: 44px;
     }
 }
 
