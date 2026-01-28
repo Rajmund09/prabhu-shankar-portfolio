@@ -60,6 +60,7 @@
                 liveLink: "https://mund-global-insurance-website.vercel.app/",
                 codeLink: "https://github.com/Rajmund09/mund-global-insurance-website"
             },
+            
             {
                 id: 6,
                 title: "Professional Portfolio",
@@ -246,8 +247,19 @@
                 demand: "high",
                 liveLink: "https://your-live-demo-link.vercel.app/",
                 codeLink: "https://github.com/Rajmund09/elegant-todo-pro"
-            }
-
+            },
+            {
+            id: 6,
+title: "Card Builder Pro",
+description: "A feature-rich, web-based card design platform that enables users to create fully customized cards with real-time previews, theme selection, image uploads, and responsive UI.",
+tags: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Responsive Design"],
+category: "web",
+type: "Personal Project",
+icon: "fas fa-id-card",
+demand: "high",
+liveLink: "https://your-live-link-here.vercel.app/",
+codeLink: "https://github.com/Rajmund09/card-builder-pro"
+        }
         ];
 
         // Initialize
