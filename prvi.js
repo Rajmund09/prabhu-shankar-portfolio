@@ -259,7 +259,39 @@ const projectsData = [
         demand: "high",
         liveLink: "https://your-live-link-here.vercel.app/",
         codeLink: "https://github.com/Rajmund09/card-builder-pro"
-    }
+    },
+    {
+    id: 22,
+    title: "Manoj Kirana Store Website",
+    description: "A modern mobile-first bilingual website built for a local grocery business to improve digital presence, customer contact, and store discoverability.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Mobile First", "Google Maps"],
+    category: "web",
+    type: "Business Website",
+    icon: "fas fa-store",
+    demand: "high",
+
+    status: "Live Production",
+    version: "v1.0",
+    complexity: "Intermediate",
+
+    highlights: [
+        "Mobile-First Responsive Design",
+        "Bilingual Language Support (English & Odia)",
+        "Click-to-Call & WhatsApp Contact",
+        "Google Maps Location Integration",
+        "Optimized for Local Business Visibility"
+    ],
+
+    techStack: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Google Maps API"
+    ],
+
+    liveLink: "https://manoj-kirana-store-official.vercel.app/",
+    codeLink: "https://github.com/Rajmund09"
+}
 ];
 
 // Initialize
