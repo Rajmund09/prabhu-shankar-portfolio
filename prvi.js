@@ -291,6 +291,39 @@ const projectsData = [
 
     liveLink: "https://manoj-kirana-store-official.vercel.app/",
     codeLink: "https://github.com/Rajmund09"
+},
+{
+    id: 23,
+    title: "EduFin Intelligence Platform",
+    description: "AI-powered fintech learning platform that trains traders in behavioral discipline, risk management, and decision-making using simulation-based trading tools.",
+    tags: ["React", "FastAPI", "AI", "FinTech", "Supabase"],
+    category: "ai",
+    type: "FinTech Platform",
+    icon: "fas fa-chart-line",
+    demand: "high",
+
+    status: "Active Development",
+    version: "v0.9",
+    complexity: "Advanced",
+
+    highlights: [
+        "AI-Assisted Trading Simulation",
+        "Behavioral Bias Detection (FOMO, Loss Aversion)",
+        "Strategy Simulator with Risk Modeling",
+        "Gamified Learning with XP System",
+        "GitHub-style Activity Heatmap"
+    ],
+
+    techStack: [
+        "React",
+        "FastAPI",
+        "Supabase",
+        "Canvas API",
+        "REST API"
+    ],
+
+    liveLink: "#",
+    codeLink: "https://github.com/Rajmund09/edufin-intelligence"
 }
 ];
 
