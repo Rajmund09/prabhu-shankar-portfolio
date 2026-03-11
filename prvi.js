@@ -355,7 +355,7 @@ const projectsData = [
             "Chart.js"
         ],
 
-        liveLink: "#",
+        liveLink: "https://trade-vision-ai-eta.vercel.app/",
         codeLink: "https://github.com/Rajmund09/TradeVision_AI"
     },
     {
