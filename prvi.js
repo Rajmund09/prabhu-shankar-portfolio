@@ -324,6 +324,39 @@ const projectsData = [
 
     liveLink: "#",
     codeLink: "https://github.com/Rajmund09/edufin-intelligence"
+},
+{
+    id: 24,
+    title: "TradeVision AI",
+    description: "A full-stack AI trading intelligence platform combining technical indicators, LSTM predictions, sentiment analysis, and risk scoring for smarter investment decisions.",
+    tags: ["React", "FastAPI", "TensorFlow", "AI/ML", "MySQL"],
+    category: "ai",
+    type: "AI Trading Platform",
+    icon: "fas fa-brain",
+    demand: "high",
+
+    status: "Research Prototype",
+    version: "v1.0",
+    complexity: "Advanced",
+
+    highlights: [
+        "Hybrid AI + Technical Analysis Prediction Engine",
+        "LSTM-Based Market Trend Prediction",
+        "Portfolio Risk Assessment System",
+        "Stock News Sentiment Analysis",
+        "Full-Stack ML Architecture"
+    ],
+
+    techStack: [
+        "React",
+        "FastAPI",
+        "TensorFlow",
+        "MySQL",
+        "Chart.js"
+    ],
+
+    liveLink: "#",
+    codeLink: "https://github.com/Rajmund09"
 }
 ];
 
