@@ -356,7 +356,7 @@ const projectsData = [
         ],
 
         liveLink: "#",
-        codeLink: "https://github.com/Rajmund09"
+        codeLink: "https://github.com/Rajmund09/TradeVision_AI"
     },
     {
         id: 25,
