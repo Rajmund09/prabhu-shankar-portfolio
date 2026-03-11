@@ -357,6 +357,37 @@ const projectsData = [
 
     liveLink: "#",
     codeLink: "https://github.com/Rajmund09"
+},
+{
+    id: 25,
+    title: "Smart City DSA Simulator",
+    description: "A modular C++ simulator that demonstrates core graph algorithms including BFS, DFS, and Dijkstra in a smart city infrastructure simulation.",
+    tags: ["C++", "DSA", "Graphs", "Algorithms"],
+    category: "cpp",
+    type: "Algorithm Simulator",
+    icon: "fas fa-city",
+    demand: "high",
+
+    status: "Active Development",
+    version: "v2.0",
+    complexity: "Advanced",
+
+    highlights: [
+        "Weighted Directed Graph Implementation",
+        "BFS & DFS Traversal Algorithms",
+        "Shortest Path using Dijkstra",
+        "Adjacency List using STL",
+        "Exception Handling & Modular Design"
+    ],
+
+    techStack: [
+        "C++20",
+        "STL",
+        "Graph Algorithms"
+    ],
+
+    liveLink: "#",
+    codeLink: "https://github.com/Rajmund09"
 }
 ];
 
