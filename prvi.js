@@ -261,134 +261,134 @@ const projectsData = [
         codeLink: "https://github.com/Rajmund09/card-builder-pro"
     },
     {
-    id: 22,
-    title: "Manoj Kirana Store Website",
-    description: "A modern mobile-first bilingual website built for a local grocery business to improve digital presence, customer contact, and store discoverability.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Mobile First", "Google Maps"],
-    category: "web",
-    type: "Business Website",
-    icon: "fas fa-store",
-    demand: "high",
+        id: 22,
+        title: "Manoj Kirana Store Website",
+        description: "A modern mobile-first bilingual website built for a local grocery business to improve digital presence, customer contact, and store discoverability.",
+        tags: ["HTML5", "CSS3", "JavaScript", "Mobile First", "Google Maps"],
+        category: "web",
+        type: "Business Website",
+        icon: "fas fa-store",
+        demand: "high",
 
-    status: "Live Production",
-    version: "v1.0",
-    complexity: "Intermediate",
+        status: "Live Production",
+        version: "v1.0",
+        complexity: "Intermediate",
 
-    highlights: [
-        "Mobile-First Responsive Design",
-        "Bilingual Language Support (English & Odia)",
-        "Click-to-Call & WhatsApp Contact",
-        "Google Maps Location Integration",
-        "Optimized for Local Business Visibility"
-    ],
+        highlights: [
+            "Mobile-First Responsive Design",
+            "Bilingual Language Support (English & Odia)",
+            "Click-to-Call & WhatsApp Contact",
+            "Google Maps Location Integration",
+            "Optimized for Local Business Visibility"
+        ],
 
-    techStack: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Google Maps API"
-    ],
+        techStack: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Google Maps API"
+        ],
 
-    liveLink: "https://manoj-kirana-store-official.vercel.app/",
-    codeLink: "https://github.com/Rajmund09"
-},
-{
-    id: 23,
-    title: "EduFin Intelligence Platform",
-    description: "AI-powered fintech learning platform that trains traders in behavioral discipline, risk management, and decision-making using simulation-based trading tools.",
-    tags: ["React", "FastAPI", "AI", "FinTech", "Supabase"],
-    category: "ai",
-    type: "FinTech Platform",
-    icon: "fas fa-chart-line",
-    demand: "high",
+        liveLink: "https://manoj-kirana-store-official.vercel.app/",
+        codeLink: "https://github.com/Rajmund09"
+    },
+    {
+        id: 23,
+        title: "EduFin Intelligence Platform",
+        description: "AI-powered fintech learning platform that trains traders in behavioral discipline, risk management, and decision-making using simulation-based trading tools.",
+        tags: ["React", "FastAPI", "AI", "FinTech", "Supabase"],
+        category: "ai",
+        type: "FinTech Platform",
+        icon: "fas fa-chart-line",
+        demand: "high",
 
-    status: "Active Development",
-    version: "v0.9",
-    complexity: "Advanced",
+        status: "Active Development",
+        version: "v0.9",
+        complexity: "Advanced",
 
-    highlights: [
-        "AI-Assisted Trading Simulation",
-        "Behavioral Bias Detection (FOMO, Loss Aversion)",
-        "Strategy Simulator with Risk Modeling",
-        "Gamified Learning with XP System",
-        "GitHub-style Activity Heatmap"
-    ],
+        highlights: [
+            "AI-Assisted Trading Simulation",
+            "Behavioral Bias Detection (FOMO, Loss Aversion)",
+            "Strategy Simulator with Risk Modeling",
+            "Gamified Learning with XP System",
+            "GitHub-style Activity Heatmap"
+        ],
 
-    techStack: [
-        "React",
-        "FastAPI",
-        "Supabase",
-        "Canvas API",
-        "REST API"
-    ],
+        techStack: [
+            "React",
+            "FastAPI",
+            "Supabase",
+            "Canvas API",
+            "REST API"
+        ],
 
-    liveLink: "#",
-    codeLink: "https://github.com/Rajmund09/edufin-intelligence"
-},
-{
-    id: 24,
-    title: "TradeVision AI",
-    description: "A full-stack AI trading intelligence platform combining technical indicators, LSTM predictions, sentiment analysis, and risk scoring for smarter investment decisions.",
-    tags: ["React", "FastAPI", "TensorFlow", "AI/ML", "MySQL"],
-    category: "ai",
-    type: "AI Trading Platform",
-    icon: "fas fa-brain",
-    demand: "high",
+        liveLink: "#",
+        codeLink: "https://github.com/Rajmund09/edufin-intelligence"
+    },
+    {
+        id: 24,
+        title: "TradeVision AI",
+        description: "A full-stack AI trading intelligence platform combining technical indicators, LSTM predictions, sentiment analysis, and risk scoring for smarter investment decisions.",
+        tags: ["React", "FastAPI", "TensorFlow", "AI/ML", "MySQL"],
+        category: "ai",
+        type: "AI Trading Platform",
+        icon: "fas fa-brain",
+        demand: "high",
 
-    status: "Research Prototype",
-    version: "v1.0",
-    complexity: "Advanced",
+        status: "Research Prototype",
+        version: "v1.0",
+        complexity: "Advanced",
 
-    highlights: [
-        "Hybrid AI + Technical Analysis Prediction Engine",
-        "LSTM-Based Market Trend Prediction",
-        "Portfolio Risk Assessment System",
-        "Stock News Sentiment Analysis",
-        "Full-Stack ML Architecture"
-    ],
+        highlights: [
+            "Hybrid AI + Technical Analysis Prediction Engine",
+            "LSTM-Based Market Trend Prediction",
+            "Portfolio Risk Assessment System",
+            "Stock News Sentiment Analysis",
+            "Full-Stack ML Architecture"
+        ],
 
-    techStack: [
-        "React",
-        "FastAPI",
-        "TensorFlow",
-        "MySQL",
-        "Chart.js"
-    ],
+        techStack: [
+            "React",
+            "FastAPI",
+            "TensorFlow",
+            "MySQL",
+            "Chart.js"
+        ],
 
-    liveLink: "#",
-    codeLink: "https://github.com/Rajmund09"
-},
-{
-    id: 25,
-    title: "Smart City DSA Simulator",
-    description: "A modular C++ simulator that demonstrates core graph algorithms including BFS, DFS, and Dijkstra in a smart city infrastructure simulation.",
-    tags: ["C++", "DSA", "Graphs", "Algorithms"],
-    category: "cpp",
-    type: "Algorithm Simulator",
-    icon: "fas fa-city",
-    demand: "high",
+        liveLink: "#",
+        codeLink: "https://github.com/Rajmund09"
+    },
+    {
+        id: 25,
+        title: "Smart City DSA Simulator",
+        description: "A modular C++ simulator that demonstrates core graph algorithms including BFS, DFS, and Dijkstra in a smart city infrastructure simulation.",
+        tags: ["C++", "DSA", "Graphs", "Algorithms"],
+        category: "cpp",
+        type: "Algorithm Simulator",
+        icon: "fas fa-city",
+        demand: "high",
 
-    status: "Active Development",
-    version: "v2.0",
-    complexity: "Advanced",
+        status: "Active Development",
+        version: "v2.0",
+        complexity: "Advanced",
 
-    highlights: [
-        "Weighted Directed Graph Implementation",
-        "BFS & DFS Traversal Algorithms",
-        "Shortest Path using Dijkstra",
-        "Adjacency List using STL",
-        "Exception Handling & Modular Design"
-    ],
+        highlights: [
+            "Weighted Directed Graph Implementation",
+            "BFS & DFS Traversal Algorithms",
+            "Shortest Path using Dijkstra",
+            "Adjacency List using STL",
+            "Exception Handling & Modular Design"
+        ],
 
-    techStack: [
-        "C++20",
-        "STL",
-        "Graph Algorithms"
-    ],
+        techStack: [
+            "C++20",
+            "STL",
+            "Graph Algorithms"
+        ],
 
-    liveLink: "#",
-    codeLink: "https://github.com/Rajmund09"
-}
+        liveLink: "#",
+        codeLink: "https://github.com/Rajmund09"
+    }
 ];
 
 // Initialize
