@@ -322,7 +322,7 @@ const projectsData = [
             "REST API"
         ],
 
-        liveLink: "#",
+        liveLink: "https://tradevision-ai-ryxp.vercel.app/",
         codeLink: "https://github.com/Rajmund09/edufin-intelligence"
     },
     {
