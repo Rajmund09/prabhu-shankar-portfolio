@@ -290,7 +290,7 @@ const projectsData = [
         ],
 
         liveLink: "https://manoj-kirana-store-official.vercel.app/",
-        codeLink: "https://github.com/Rajmund09"
+        codeLink: "https://github.com/Rajmund09/manoj-kirana-store-official"
     },
     {
         id: 23,
