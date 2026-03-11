@@ -323,7 +323,7 @@ const projectsData = [
         ],
 
         liveLink: "https://tradevision-ai-ryxp.vercel.app/",
-        codeLink: "https://github.com/Rajmund09/edufin-intelligence"
+        codeLink: "https://github.com/Rajmund09/git-initeducation-intelligence-platform"
     },
     {
         id: 24,
