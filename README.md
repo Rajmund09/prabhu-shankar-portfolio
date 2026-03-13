@@ -112,7 +112,7 @@ Interactive toggle between:
 
 ### 4️⃣ Projects
 
-Showcase of **19+ projects** including:
+Showcase of **25+ projects** including:
 
 * AI projects
 * Web development projects
