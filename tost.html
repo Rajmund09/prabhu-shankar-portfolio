@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Skills & Tools</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Premium typography: Syne (display) + JetBrains Mono (code) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="tost.css" />
+</head>
+<body>
+
+
+  <!-- ─── Back Button ───────────────────────────────────── -->
+  <div class="back-button-container">
+    <a href="index.html" class="back-button">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back to Portfolio</span>
+    </a>
+  </div>
+
+  <!-- ─── Background Canvas ─────────────────────────────── -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ─── Ambient Orbs ──────────────────────────────────── -->
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+
+  <!-- ─── Noise Overlay ─────────────────────────────────── -->
+  <div class="noise-overlay"></div>
+
+  <!-- ─── Header ────────────────────────────────────────── -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-badge reveal-up">
+        <span class="badge-dot"></span>
+        <span>Skills & Expertise</span>
+      </div>
+      <h1 class="main-title reveal-up" data-delay="100">
+        Professional<br />
+        <span class="title-gradient">Skills &amp; Tools</span>
+      </h1>
+      <p class="title-subtext reveal-up" data-delay="200">
+        Comprehensive showcase of technical expertise, development capabilities,
+        and interactive demonstrations — built for engineers, by an engineer.
+      </p>
+      <!-- Stat bar -->
+      <div class="header-stats reveal-up" data-delay="300">
+        <div class="stat-item">
+          <span class="stat-num" data-count="14">0</span>
+          <span class="stat-label">Tools</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="24">0</span>
+          <span class="stat-label">Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="7">0</span>
+          <span class="stat-label">Code Demos</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Tools Section ────────────────────────────────── -->
+  <section class="tools-section section" id="tools-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">01</span>
+        <h2 class="section-title">Development Tools</h2>
+        <p class="section-desc">The environment that powers my workflow</p>
+      </div>
+      <div class="tools-grid" id="tools-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── Skills Section ───────────────────────────────── -->
+  <section class="skills-section section" id="skills-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">02</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">Languages, frameworks, and domains I work in</p>
+      </div>
+
+      <!-- Skill category tabs -->
+      <div class="skill-tabs reveal-up" id="skill-tabs">
+        <button class="skill-tab active" data-category="all">All</button>
+        <button class="skill-tab" data-category="languages">Languages</button>
+        <button class="skill-tab" data-category="frameworks">Frameworks</button>
+        <button class="skill-tab" data-category="ai">AI / Data</button>
+        <button class="skill-tab" data-category="databases">Databases</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ─── Demos Section ────────────────────────────────── -->
+  <section class="demos-section section" id="demos-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">03</span>
+        <h2 class="section-title">Interactive Code Demos</h2>
+        <p class="section-desc">Live syntax across languages — watch it type itself</p>
+      </div>
+
+      <div class="demos-container">
+        <!-- Code terminal cards (injected by JS) -->
+        <div class="demos-grid" id="demos-grid"></div>
+
+        <!-- Three.js Cube Card -->
+        <div class="demo-card blender-demo-card reveal-up">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <div class="terminal-btn close-btn"></div>
+              <div class="terminal-btn minimize-btn"></div>
+              <div class="terminal-btn maximize-btn"></div>
+            </div>
+            <div class="terminal-title">
+              <i class="fas fa-cube"></i>
+              Interactive 3D Cube
+            </div>
+            <div class="terminal-tool" id="interaction-hint">
+              <i class="fas fa-mouse-pointer hint-icon"></i>
+              <span class="hint-text">Drag to rotate · Scroll to zoom</span>
+            </div>
+          </div>
+
+          <div id="blender-model-container"></div>
+
+          <div class="blender-controls">
+            <button class="blender-btn" id="rotate-btn" onclick="toggleRotation()">
+              <i class="fas fa-pause"></i> Pause
+            </button>
+            <button class="blender-btn" id="wireframe-btn" onclick="toggleWireframe()">
+              <i class="fas fa-th"></i> Wireframe
+            </button>
+            <button class="blender-btn" onclick="resetCube()">
+              <i class="fas fa-redo"></i> Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer Gradient Fade ──────────────────────────── -->
+  <div class="footer-fade"></div>
+
+  <script src="tost.js"></script>
+</body>
+</html>
