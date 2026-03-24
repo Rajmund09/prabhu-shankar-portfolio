@@ -400,7 +400,19 @@ const projectsData = [
     demand: "high",
     liveLink: "https://github.com/Rajmund09/churnguard-ml",
     codeLink: "https://github.com/Rajmund09/churnguard-ml"
-}
+},
+{
+    id: 27,
+    title: "AgroBrain 360 — AI Agriculture Platform",
+    description: "Offline-first AI agriculture platform helping farmers detect crop diseases, monitor livestock health, repair machinery, manage agricultural waste, and discover nearby services using computer vision and edge AI.",
+    tags: ["AI", "Computer Vision", "Edge AI", "Agriculture", "Mobile"],
+    category: "ai",
+    type: "AI Platform",
+    icon: "fas fa-seedling",
+    demand: "high",
+    liveLink: "https://agrobrain-360.vercel.app",
+    codeLink: "https://github.com/Rajmund09/agrobrain-360"
+},
 ];
 
 // Initialize
