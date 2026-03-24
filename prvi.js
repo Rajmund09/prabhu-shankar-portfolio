@@ -388,7 +388,19 @@ const projectsData = [
 
         liveLink: "#",
         codeLink: "https://github.com/Rajmund09"
-    }
+    },
+    {
+    id: 26,
+    title: "ChurnGuard — AI Churn Prediction",
+    description: "Full-stack ML web app that predicts customer churn using XGBoost with 93% accuracy. Features SHAP explainability, real-time prediction dashboard, bulk CSV upload, user auth, and per-user prediction history.",
+    tags: ["Python", "Flask", "XGBoost", "SHAP", "SQLite", "Tailwind CSS"],
+    category: "ai",
+    type: "ML Web Application",
+    icon: "fas fa-shield-alt",
+    demand: "high",
+    liveLink: "https://github.com/Rajmund09/churnguard-ml",
+    codeLink: "https://github.com/Rajmund09/churnguard-ml"
+}
 ];
 
 // Initialize
