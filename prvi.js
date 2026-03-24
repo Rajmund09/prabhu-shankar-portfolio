@@ -413,6 +413,18 @@ const projectsData = [
     liveLink: "https://agrobrain-360.vercel.app",
     codeLink: "https://github.com/Rajmund09/agrobrain-360"
 },
+{
+    id: 28,
+    title: "AgroBrain 360 — App Prototype",
+    description: "Interactive prototype of the AgroBrain 360 mobile application with full UI walkthrough, feature demonstrations, and downloadable APK for agricultural AI assistance.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Prototype", "Mobile App"],
+    category: "ai",
+    type: "App Prototype",
+    icon: "fas fa-mobile-alt",
+    demand: "high",
+    liveLink: "https://agrobrain360-app-prototype.vercel.app/",
+    codeLink: "https://github.com/Rajmund09/agrobrain360-app-prototype"
+},
 ];
 
 // Initialize
