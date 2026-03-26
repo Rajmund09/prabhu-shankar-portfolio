@@ -425,6 +425,18 @@ const projectsData = [
         liveLink: "https://agrobrain360-app-prototype.vercel.app/",
         codeLink: "https://github.com/Rajmund09/agrobrain360-app-prototype"
     },
+    {
+    id: 29,
+    title: "Cinematic Render Quest",
+    description: "A visually immersive cinematic web experience built with React, TypeScript, and Tailwind CSS featuring smooth Lenis scroll animations, dynamic 3D-style UI components, and a high-end cabinet factory showcase interface.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Lenis", "Vite", "GSAP"],
+    category: "web",
+    type: "Cinematic Web Experience",
+    icon: "fas fa-film",
+    demand: "high",
+    liveLink: "https://github.com/Rajmund09/cinematic-render-quest",
+    codeLink: "https://github.com/Rajmund09/cinematic-render-quest"
+},
 ];
 
 // Initialize
