@@ -26,20 +26,16 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <b>🛠️ Skills & Expertise</b><br>
-      <img src="screenshots/skills_full.png" width="400" alt="Skills Full">
-    </td>
-    <td align="center" width="50%">
-      <b>🔄 Interactive Toggles</b><br>
+      <b>🔄 Interactive Skills</b><br>
       <img src="screenshots/skills_toggle.png" width="400" alt="Skills Toggle">
     </td>
-  </tr>
-  <tr>
-    <td align="center">
+    <td align="center" width="50%">
       <b>📂 Project Portfolio</b><br>
       <img src="screenshots/projects.png" width="400" alt="Projects">
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <b>⚡ Modern 3D Loader</b><br>
       <img src="screenshots/loader.png" width="400" alt="Loader">
     </td>
@@ -48,23 +44,15 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 ---
 
-<details>
-<summary><b>✨ Key Features (Click to expand)</b></summary>
+## ✨ Features
 
-### 🎨 Immersive UI/UX
-- **Dark Mode Aesthetic**: Sleek interface with vibrant gradient accents.
-- **Glassmorphism**: Elements with blurred backgrounds and soft shadows.
-- **Micro-interactions**: Hover effects, button physics, and smooth transitions.
-
-### ⚡ Cutting-edge Animations
-- **GSAP & ScrollTrigger**: Silky smooth scroll-based entrance effects.
-- **Interactive Profile**: Dynamic 3D card movement and video integration.
-- **Dynamic Content**: Auto-counting stats and interactive skill loops.
-
-### 📱 Performance & Optimization
-- **Fully Responsive**: Seamless experience across Mobile, Tablet, and Desktop.
-- **Lightning Fast**: Optimized asset loading and lightweight GSAP architecture.
-- **SEO Ready**: Semantic HTML and proper metadata for search visibility.
+- **Responsive modern UI**: Optimized for all devices and screen sizes.
+- **Animated interactions**: Powered by GSAP for a silky-smooth experience.
+- **Project showcase system**: Dynamic grid featuring 30+ innovative works.
+- **AI/ML focused branding**: Aesthetic reflecting expertise in intelligent systems.
+- **Smooth navigation**: Intuitive scroll-based flow and interactive elements.
+- **Live deployment**: Fast, reliable hosting with automated CI/CD.
+- **Interactive sections**: Engaging components that respond to user input.
 
 ---
 
