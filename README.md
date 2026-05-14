@@ -24,6 +24,35 @@ A **premium, modern, and highly interactive portfolio website** designed to show
 
 ---
 
+## 📸 Visual Showcase
+
+### 🏠 Hero & Identity
+*The core identity of the portfolio, featuring a dynamic 3D profile card and typing animations.*
+<p align="center">
+  <img src="screenshots/hero.png" width="900" alt="Hero Section">
+</p>
+
+### 🛠️ Professional Skills & Tools
+*A comprehensive display of expertise, featuring interactive toggles and detailed technology categories.*
+<p align="center">
+  <img src="screenshots/skills_full.png" width="445" alt="Skills Full View">
+  <img src="screenshots/skills_toggle.png" width="445" alt="Skills Toggle">
+</p>
+
+### 📂 Project Portfolio
+*An interactive archive showcasing 25+ innovative projects across AI, Web, and Automation.*
+<p align="center">
+  <img src="screenshots/projects.png" width="900" alt="Project Portfolio">
+</p>
+
+### ⚡ Creative Animations
+*Custom 3D loaders and smooth transitions built with Three.js and GSAP.*
+<p align="center">
+  <img src="screenshots/loader.png" width="600" alt="3D Loader">
+</p>
+
+---
+
 ## ✨ Key Features
 
 ### 🎨 Immersive UI/UX
