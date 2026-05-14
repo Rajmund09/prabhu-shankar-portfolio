@@ -54,7 +54,13 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 <details>
 <summary><b>✨ Key Features (Click to expand)</b></summary>
-
+- Responsive modern UI
+- Animated interactions
+- Project showcase system
+- AI/ML focused branding
+- Smooth navigation
+- Live deployment
+- Interactive sections
 ### 🎨 Immersive UI/UX
 - **Dark Mode Aesthetic**: Sleek interface with vibrant gradient accents.
 - **Glassmorphism**: Elements with blurred backgrounds and soft shadows.
