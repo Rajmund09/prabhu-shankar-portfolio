@@ -1,199 +1,126 @@
-# 🌐 Prabhu Shankar Mund — Developer Portfolio
+# <p align="center">🌐 Prabhu Shankar Mund — Developer Portfolio</p>
 
-![Portfolio Preview](ppc.jpg)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status Active">
+  <img src="https://img.shields.io/badge/Portfolio-v2.0-blue?style=for-the-badge" alt="Version 2.0">
+  <img src="https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel Deployment">
+</p>
 
-A **modern, responsive portfolio website** showcasing my projects, skills, and experience as an **AI/ML Engineer and Full-Stack Developer**.
-The website highlights work in **AI, Web Development, Automation, and 3D Design**, with interactive UI, smooth animations, and live project demonstrations.
-
----
-
-# 🚀 Live Portfolio
-
-🔗 **Visit the Website**
-
-https://prabhu-shankar-portfolio.vercel.app/
+<p align="center">
+  <img src="ppc.jpg" alt="Portfolio Preview" width="800">
+</p>
 
 ---
 
-# ✨ Features
-
-### 🎨 Modern UI / UX
-
-* Dark themed interface with gradient accents
-* Smooth animations and transitions
-* Clean and minimal layout
-
-### 📱 Fully Responsive
-
-* Optimized for **Desktop, Tablet, and Mobile**
-* Adaptive layout and scalable components
-
-### ⚡ Interactive Components
-
-* 3D animated profile card
-* Dynamic skills section
-* Project cards with **live demo links**
-* Animated testimonials carousel
-* Interactive contact form
-
-### 🚀 Performance Optimized
-
-* Lightweight frontend architecture
-* Optimized media loading
-* Smooth GSAP animations
-
-### 🔍 SEO Friendly
-
-* Semantic HTML structure
-* Optimized meta tags
-* Accessible content structure
+### <p align="center">🚀 [Visit Live Website](https://prabhu-shankar-portfolio.vercel.app/)</p>
 
 ---
 
-# 🛠️ Tech Stack
+## 📖 Overview
 
-| Category    | Technologies                                     |
-| ----------- | ------------------------------------------------ |
-| Frontend    | HTML5, CSS3, JavaScript (ES6+)                   |
-| Animations  | GSAP, ScrollTrigger                              |
-| 3D Graphics | Three.js                                         |
-| Icons       | Font Awesome                                     |
-| Fonts       | Google Fonts (Montserrat, Inter, Press Start 2P) |
-| Deployment  | Vercel                                           |
+A **premium, modern, and highly interactive portfolio website** designed to showcase my journey as an **AI/ML Engineer and Full-Stack Developer**. This project focuses on high-performance animations, sleek UI/UX, and a comprehensive display of over **25+ projects** ranging from AI automation to creative web experiences.
+
+> "Code can be copied. Thinking, problem-solving ability, attitude, and intelligence cannot." — **Prabhu Shankar Mund**
 
 ---
 
-# 📁 Project Structure
+## ✨ Key Features
 
-```
+### 🎨 Immersive UI/UX
+- **Dark Mode Aesthetic**: A sleek, high-contrast interface with vibrant gradient accents.
+- **Glassmorphism**: Modern UI elements with blurred backgrounds and soft shadows.
+- **Micro-interactions**: Hover effects, button physics, and smooth state transitions.
+
+### ⚡ Cutting-edge Animations
+- **GSAP & ScrollTrigger**: Silky smooth scroll-based animations and entrance effects.
+- **3D Interactive Profile**: Dynamic 3D card movement and interactive elements.
+- **Text Typing Effects**: Dynamic hero text to highlight core expertise.
+
+### 📱 Performance & Compatibility
+- **Fully Responsive**: Optimized for every screen size — Mobile, Tablet, and Desktop.
+- **Lightning Fast**: Optimized asset loading and lightweight frontend architecture.
+- **SEO Optimized**: Semantic HTML and proper meta-tagging for maximum visibility.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend & Styling
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
+
+### Animation & Graphics
+<p>
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP">
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
+</p>
+
+### Deployment & Tools
+<p>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
+</p>
+
+---
+
+## 📁 Project Structure
+
+```bash
 PORTFOLIO
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── assets
-│   └── resume
-│       ├── PRABHU SHANKAR MUND - Full Stack Developer.pdf
-│       └── PRABHU SHANKAR MUND - Full Stack Developer.docx
-│
-├── ppc.jpg
-├── prl.png
-├── phv.mp4
-│
-├── tost.html
-├── tost.css
-├── tost.js
-│
-├── prvi.html
-├── prvi.css
-├── prvi.js
+├── 📂 assets/              # Static assets (Resume, icons)
+│   └── 📂 resume/          # PDF and DOCX versions of CV
+├── index.html              # Main entry point
+├── style.css               # Core styling and animations
+├── script.js               # GSAP logic and interactivity
+├── phv.mp4                 # Introduction video
+├── ppc.jpg                 # Hero preview image
+└── prl.png                 # Brand logo/icon
 ```
 
 ---
 
-# 🧩 Website Sections
+## 💻 Local Development
 
-### 1️⃣ Hero Section
+Follow these steps to run the portfolio locally:
 
-Interactive hero section with animated profile card and video introduction.
-
-### 2️⃣ About Me
-
-Overview of background, education, and development journey.
-
-### 3️⃣ Skills & Tools
-
-Interactive toggle between:
-
-* Programming Languages
-* Development Tools
-* Technologies
-
-### 4️⃣ Projects
-
-Showcase of **25+ projects** including:
-
-* AI projects
-* Web development projects
-* Automation tools
-* Creative UI experiments
-
-Each project includes:
-
-* Description
-* Tech stack
-* Live demo links
-
-### 5️⃣ Client Reviews
-
-Auto-scrolling testimonial section with user feedback.
-
-### 6️⃣ Contact Section
-
-Multiple ways to reach out:
-
-* Email
-* WhatsApp integration
-* Social links
-
-### 7️⃣ Full Project Portfolio
-
-Dedicated page containing detailed project listings with filters.
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/Rajmund09/prabhu-shankar-portfolio.git
+   ```
+2. **Navigate to Directory**
+   ```bash
+   cd prabhu-shankar-portfolio
+   ```
+3. **Run Locally**
+   Simply open `index.html` in your favorite browser or use **Live Server** in VS Code.
 
 ---
 
-# 💻 Local Development
+## 🤝 Connect With Me
 
-### 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/your-username/prabhu-shankar-portfolio.git
-```
-
-### 2️⃣ Navigate to project folder
-
-```bash
-cd prabhu-shankar-portfolio
-```
-
-### 3️⃣ Open the project
-
-Simply open **index.html** in your browser.
+<p align="left">
+  <a href="https://github.com/Rajmund09" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="mailto:your-email@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+</p>
 
 ---
 
-# ⚡ Philosophy
+## ⭐ Support
 
-> Code can be copied.
-> Thinking, problem-solving ability, attitude, and intelligence cannot.
+If you find this project inspiring, feel free to:
+- ⭐ **Star** the repository to show support!
+- 🍴 **Fork** it to build your own version.
+- 💡 **Suggest** improvements via issues.
 
-This portfolio represents **how I approach real problems and build solutions**, not just visual design.
-
-If you're here to learn — welcome.
-If you're here to copy — you'll only get the surface.
-
-— **Prabhu Shankar Mund**
-
----
-
-# 👨‍💻 Author
-
-**Prabhu Shankar Mund (Raj)**
-🎓 BCA Student
-💻 Full Stack Developer
-🤖 AI & Automation Enthusiast
-
----
-
-# ⭐ Support
-
-If you like this project:
-
-⭐ Star the repository
-🍴 Fork the project
-💡 Suggest improvements
-
----
-
-**Building intelligent systems and creative digital experiences.**
+<p align="center">
+  <b>Building intelligent systems and creative digital experiences.</b><br>
+  Developed with ❤️ by Prabhu Shankar Mund
+</p>
