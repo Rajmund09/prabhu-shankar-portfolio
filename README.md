@@ -1,19 +1,21 @@
-# <p align="center">🌐 Prabhu Shankar Mund — Developer Portfolio</p>
+# 🌐 Prabhu Shankar Mund — Developer Portfolio
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status Active">
   <img src="https://img.shields.io/badge/Portfolio-v2.0-blue?style=for-the-badge" alt="Version 2.0">
   <img src="https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel Deployment">
+  <img src="https://img.shields.io/github/stars/Rajmund09/prabhu-shankar-portfolio?style=for-the-badge" alt="Stars">
 </p>
 
 <h3 align="center">
-  🚀 <a href="https://prabhu-shankar-portfolio.vercel.app/">Visit Live Website</a> | 📁 <a href="#-project-structure">Project Structure</a>
+  🚀 <a href="https://prabhu-shankar-portfolio.vercel.app/">Visit Live Website</a> | 📁 <a href="#-project-structure">Project Structure</a> | 🤝 <a href="#-connect-with-me">Connect</a>
 </h3>
 
 ---
 
 ## 📖 Overview
-A **premium, modern, and highly interactive portfolio website** showcasing a journey through **AI/ML Engineering and Full-Stack Development**. Built for high-performance animations and sleek UI/UX, featuring **25+ projects**.
+
+A **premium, modern, and highly interactive portfolio website** showcasing a journey through **AI/ML Engineering and Full-Stack Development**. This project is built for high-performance animations and sleek UI/UX, featuring a curated collection of **30+ projects**.
 
 > "Code can be copied. Thinking, problem-solving ability, attitude, and intelligence cannot." — **Prabhu Shankar Mund**
 
@@ -23,18 +25,12 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 <table align="center">
   <tr>
-    <td colspan="2" align="center">
-      <b>🏠 Hero Section & Identity</b><br>
-      <img src="screenshots/hero.png" width="800" alt="Hero">
-    </td>
-  </tr>
-  <tr>
     <td align="center" width="50%">
-      <b>🛠️ Skills (Full View)</b><br>
+      <b>🛠️ Skills & Expertise</b><br>
       <img src="screenshots/skills_full.png" width="400" alt="Skills Full">
     </td>
     <td align="center" width="50%">
-      <b>🔄 Skills (Toggle Mode)</b><br>
+      <b>🔄 Interactive Toggles</b><br>
       <img src="screenshots/skills_toggle.png" width="400" alt="Skills Toggle">
     </td>
   </tr>
@@ -44,7 +40,7 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
       <img src="screenshots/projects.png" width="400" alt="Projects">
     </td>
     <td align="center">
-      <b>⚡ 3D Cube Loader</b><br>
+      <b>⚡ Modern 3D Loader</b><br>
       <img src="screenshots/loader.png" width="400" alt="Loader">
     </td>
   </tr>
@@ -54,13 +50,7 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 <details>
 <summary><b>✨ Key Features (Click to expand)</b></summary>
-- Responsive modern UI
-- Animated interactions
-- Project showcase system
-- AI/ML focused branding
-- Smooth navigation
-- Live deployment
-- Interactive sections
+
 ### 🎨 Immersive UI/UX
 - **Dark Mode Aesthetic**: Sleek interface with vibrant gradient accents.
 - **Glassmorphism**: Elements with blurred backgrounds and soft shadows.
@@ -68,50 +58,61 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 ### ⚡ Cutting-edge Animations
 - **GSAP & ScrollTrigger**: Silky smooth scroll-based entrance effects.
-- **3D Interactive Profile**: Dynamic 3D card movement.
-- **Text Typing Effects**: Highlights core expertise dynamically.
+- **Interactive Profile**: Dynamic 3D card movement and video integration.
+- **Dynamic Content**: Auto-counting stats and interactive skill loops.
 
-### 📱 Performance & Compatibility
-- **Fully Responsive**: Optimized for Mobile, Tablet, and Desktop.
-- **Lightning Fast**: Optimized asset loading and lightweight architecture.
-- **SEO Optimized**: Semantic HTML and proper meta-tagging.
-</details>
+### 📱 Performance & Optimization
+- **Fully Responsive**: Seamless experience across Mobile, Tablet, and Desktop.
+- **Lightning Fast**: Optimized asset loading and lightweight GSAP architecture.
+- **SEO Ready**: Semantic HTML and proper metadata for search visibility.
 
-<details>
-<summary><b>🛠️ Tech Stack (Click to expand)</b></summary>
+---
 
-### Frontend & Styling
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-</p>
+## 🛠️ Tech Stack
 
-### Animation & Graphics
-<p>
-  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP">
-  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js">
-</p>
+### Frontend & Animation
+| Category | Technologies |
+| :--- | :--- |
+| **Core** | HTML5, CSS3, JavaScript (ES6+) |
+| **Animation** | GSAP, ScrollTrigger, TextPlugin |
+| **Styling** | Modern CSS (Flexbox, Grid), Custom Properties |
 
-### Deployment & Tools
-<p>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
-</p>
-</details>
+### Tools & Deployment
+| Category | Technologies |
+| :--- | :--- |
+| **Deployment** | Vercel, Git/GitHub |
+| **Design** | Figma, Adobe Suite |
+| **Environment** | VS Code, Linux/Ubuntu |
+
+---
+
+## 🚀 Quick Start
+
+To run this project locally, follow these simple steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rajmund09/prabhu-shankar-portfolio.git
+   ```
+2. **Navigate to the directory**
+   ```bash
+   cd prabhu-shankar-portfolio
+   ```
+3. **Open with Live Server**
+   Simply open `index.html` in your browser or use the VS Code "Live Server" extension.
 
 ---
 
 ## 📁 Project Structure
+
 ```bash
-PORTFOLIO
-├── 📂 screenshots/         # Professional showcase images
-├── 📂 assets/resume/       # PDF and DOCX CVs
-├── index.html              # Main entry point
-├── style.css               # Core styling
-├── script.js               # GSAP logic
-└── phv.mp4                 # Introduction video
+PRABHU-PORTFOLIO/
+├── 📂 screenshots/         # Showcase images for README
+├── 📂 assets/              # PDF/DOCX Resumes and static assets
+├── index.html              # Main application entry
+├── style.css               # Core design system & styles
+├── script.js               # GSAP animations & interactivity
+└── README.md               # Documentation
 ```
 
 ---
@@ -122,8 +123,17 @@ PORTFOLIO
   <a href="https://github.com/Rajmund09" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="mailto:your-email@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  <a href="https://www.linkedin.com/in/prabhushankar-mund-216a5634a/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://x.com/Prabhushan60291" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+  </a>
+  <a href="https://www.instagram.com/raj___mund/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="https://wa.me/917978567667" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
   </a>
 </p>
 
