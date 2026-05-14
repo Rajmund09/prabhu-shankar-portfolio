@@ -25,6 +25,12 @@ A **premium, modern, and highly interactive portfolio website** showcasing a jou
 
 <table align="center">
   <tr>
+    <td colspan="2" align="center">
+      <b>🏠 Hero Section & Identity</b><br>
+      <img src="screenshots/hero.png" width="800" alt="Hero">
+    </td>
+  </tr>
+  <tr>
     <td align="center" width="50%">
       <b>🔄 Interactive Skills</b><br>
       <img src="screenshots/skills_toggle.png" width="400" alt="Skills Toggle">
